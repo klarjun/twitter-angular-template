@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { GraphsRoutingModule } from './graphs-routing.module';
 import { SocialNetworkGraphComponent } from './social-network-graph/social-network-graph.component';
+import { BrushingBarGraphComponent } from './brushing-bar-graph/brushing-bar-graph.component';
 
 @NgModule({
-  declarations: [SocialNetworkGraphComponent],
-  exports: [SocialNetworkGraphComponent],
+  declarations: [SocialNetworkGraphComponent, BrushingBarGraphComponent],
+  exports: [SocialNetworkGraphComponent, BrushingBarGraphComponent],
   imports: [
     CommonModule,
     GraphsRoutingModule
