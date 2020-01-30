@@ -1,0 +1,70 @@
+<div class="animated fadeIn">
+
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-5">
+          <h4 class="card-title mb-0">Traffic</h4>
+          <div class="small text-muted">November 2017</div>
+        </div><!--/.col-->
+        <div class="col-sm-7 d-none d-md-block">
+          <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
+          <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Day</label>
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Month</label>
+            <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Year" id="option3">Year</label>
+          </div>
+        </div><!--/.col-->
+      </div><!--/.row-->
+      <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+        
+      </div>
+    </div>
+ 
+  </div>
+  <!--/.card-->
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="brand-card">
+        <div class="brand-card-header bg-facebook">
+          <i class="fa fa-facebook"></i>
+          <div class="chart-wrapper">
+            <app-social-network-graph></app-social-network-graph>
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">89k</div>
+            <div class="text-uppercase text-muted small">friends</div>
+          </div>
+          <div>
+            <div class="text-value">459</div>
+            <div class="text-uppercase text-muted small">feeds</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-12 col-lg-9">
+      <div class="brand-card">
+        <div class="brand-card-header bg-twitter">
+          <i class="fa fa-twitter"></i>
+          <div class="chart-wrapper">
+           
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">973k</div>
+            <div class="text-uppercase text-muted small">followers</div>
+          </div>
+          <div>
+            <div class="text-value">1.792</div>
+            <div class="text-uppercase text-muted small">tweets</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+  <!--/.col-->
+
+  </div><!--/.row-->
+</div>
