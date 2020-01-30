@@ -23,7 +23,7 @@ export class SocialNetworkGraphComponent implements OnInit {
     // Compute the distinct nodes from the links.
     const links = graph.links;
     const nodeColor = d3.scale.category20();
-    const width = 600; const height = 300;
+    const width = 600; const height = 600;
     const force = d3.layout.force()
       .nodes(graph.nodes)
       .links(links)
